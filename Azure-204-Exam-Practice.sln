@@ -10,6 +10,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Q46_ArmStorageLoop", "Q46_ArmStorageLoop", "{CB0FEB76-A4D7-4FD8-A9C8-52A58F216903}"
 	ProjectSection(SolutionItems) = preProject
 		deploy-storage.json = deploy-storage.json
+		deploy.azcli = deploy.azcli
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Q47_BlobRescue", "Q47_BlobRescue", "{C72FBF79-E19F-4EAF-B8DB-F52044E66E63}"
+	ProjectSection(SolutionItems) = preProject
+		rescue-blobc.azcli = rescue-blobc.azcli
 	EndProjectSection
 EndProject
 Global
@@ -40,6 +46,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CB0FEB76-A4D7-4FD8-A9C8-52A58F216903} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C72FBF79-E19F-4EAF-B8DB-F52044E66E63} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C69F90DA-29E9-4C43-AB55-EB9E0A85DC6C}

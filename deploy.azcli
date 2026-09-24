@@ -1,1 +1,10 @@
-// JavaScript source code
+# Autentica no Azure
+az login
+
+# Cria o grupo de recursos que vai obrigar a infraestrutura da sua API
+az group create --name rg-notification-api --location eastus
+
+# Dispara o template ARM para provisionar as Storage Accounts em loop
+az deployment group create \
+	--resource-group rg-notification-api \
+	--template-file deploy-storage.json

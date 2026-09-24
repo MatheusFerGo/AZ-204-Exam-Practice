@@ -1,0 +1,10 @@
+# 1. Autenticação no ambiente
+az login
+
+# 2. O comando real de operações que desfaz a deleção do Base Blob
+# e traz de bolta todos os snapshots atrelados a ele.
+az storage blob undelete \
+	--account-nane storagenotification \
+	--container-name notification-attachments \
+	--name img1.jpg \
+	--auth-mode login
