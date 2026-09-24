@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.21.0" />
+    <PackageReference Include="Azure.Messaging.EventHubs" Version="5.12.2" />
     <PackageReference Include="Azure.ResourceManager.Compute" Version="1.16.0" />
     <PackageReference Include="Azure.Storage.Blobs" Version="12.29.2" />
     <PackageReference Include="coverlet.collector" Version="6.0.2" />
@@ -26,7 +27,6 @@
 
   <ItemGroup>
     <Folder Include="AI-Integrations\" />
-    <Folder Include="Messaging\" />
     <Folder Include="Security\" />
   </ItemGroup>
 
