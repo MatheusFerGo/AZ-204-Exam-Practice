@@ -1,0 +1,22 @@
+# 1. Criação do Grupo de Recursos
+az group create --location eastus --name rg-notification-api
+
+# 2. Criação do Hardware (Slot 1) - Usando o escalão gratuito (FREE)
+az appservice plan create \
+	--name plan-notification-api \
+	--sku FREE
+
+# 3. Criação da Aplicação Lógica (Slot 2)
+# Nota: O nome da webapp tem de ser globalmente único no Azure.
+az webapp create \
+	--name app-notificationservice-api \
+	--resource-grouop rg-notification-api \
+	--plan plan-notification-api
+
+# 4. Configuração do Deployment (Slots 3 e 4)
+az webapp deployment source config \
+	--name app-notificationservice-api \
+	--resource-group rg-notification-api \
+	--repo-url "https://github.com/SeuUsuario/NotificationService" \
+	--branch master \
+	--manual-integration

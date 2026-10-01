@@ -18,6 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Q47_BlobRescue", "Q47_BlobR
 		rescue-blobc.azcli = rescue-blobc.azcli
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Q49_WebAppDeployment", "Q49_WebAppDeployment", "{F43F82BB-0B21-4CE8-AAE9-04F5BB6CF22A}"
+	ProjectSection(SolutionItems) = preProject
+		deploy-webapp.azcli = deploy-webapp.azcli
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CB0FEB76-A4D7-4FD8-A9C8-52A58F216903} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{C72FBF79-E19F-4EAF-B8DB-F52044E66E63} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F43F82BB-0B21-4CE8-AAE9-04F5BB6CF22A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C69F90DA-29E9-4C43-AB55-EB9E0A85DC6C}
