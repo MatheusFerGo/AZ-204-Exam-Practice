@@ -5,24 +5,6 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure-204.Exercises", "Azure-204.Exercises\Azure-204.Exercises.csproj", "{DCADC437-4010-4702-83E2-6FCA88D7FE7D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Q46_ArmStorageLoop", "Q46_ArmStorageLoop", "{CB0FEB76-A4D7-4FD8-A9C8-52A58F216903}"
-	ProjectSection(SolutionItems) = preProject
-		deploy-storage.json = deploy-storage.json
-		deploy.azcli = deploy.azcli
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Q47_BlobRescue", "Q47_BlobRescue", "{C72FBF79-E19F-4EAF-B8DB-F52044E66E63}"
-	ProjectSection(SolutionItems) = preProject
-		rescue-blobc.azcli = rescue-blobc.azcli
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Q49_WebAppDeployment", "Q49_WebAppDeployment", "{F43F82BB-0B21-4CE8-AAE9-04F5BB6CF22A}"
-	ProjectSection(SolutionItems) = preProject
-		deploy-webapp.azcli = deploy-webapp.azcli
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,11 +30,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{CB0FEB76-A4D7-4FD8-A9C8-52A58F216903} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{C72FBF79-E19F-4EAF-B8DB-F52044E66E63} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{F43F82BB-0B21-4CE8-AAE9-04F5BB6CF22A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C69F90DA-29E9-4C43-AB55-EB9E0A85DC6C}
